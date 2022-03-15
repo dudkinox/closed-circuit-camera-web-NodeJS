@@ -8,7 +8,6 @@ import CameraPage from "./pages/camera";
 function App() {
   return (
     <BrowserRouter>
-      <Route path="/" component={CameraPage} />
       <Container maxWidth="lg">
         <Box sx={{ width: "100vh", height: "100vh" }}>
           <Menus />
