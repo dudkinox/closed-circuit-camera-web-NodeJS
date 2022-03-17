@@ -16,6 +16,9 @@ app.use(express.static(path.join(__dirname, "./weights")));
 app.use(express.static(path.join(__dirname, "./dist")));
 
 app.get("/", (req, res) => res.redirect("/webcam_face_detection"));
+app.get("/bbt_face_recognition", (req, res) =>
+  res.sendFile(path.join(viewsDir, "bbtFaceRecognition.html"))
+);
 app.get("/webcam_face_detection", (req, res) =>
   res.sendFile(path.join(viewsDir, "webcamFaceDetection.html"))
 );
