@@ -137,6 +137,8 @@
         const canvas = $('#overlay').get(0)
         const dims = faceapi.matchDimensions(canvas, videoEl, true)
         faceapi.draw.drawDetections(canvas, faceapi.resizeResults(result, dims))
+
+        
       }
 
       setTimeout(() => onPlay())
